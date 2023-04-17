@@ -31,3 +31,37 @@ body {
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+
+.main-content {
+    text-align: center;
+    margin: 60px 20px;
+}
+
+  /*menu*/
+  .superappka{
+	font-weight: bold;
+	margin-right: 50px;
+  }
+  .menu {
+	text-align: left;
+	background-color: white;
+   
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a {
+    display: inline-block;
+    text-decoration: none;
+	color: black;
+    padding: 30px;
+}
+
+.menu a:hover {
+    background-color: #25133d;
+    color: white;}
+  
+   
