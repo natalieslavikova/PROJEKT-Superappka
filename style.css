@@ -33,7 +33,6 @@ body {
 
 /* ----- zde začni psát vlastní CSS ----- */
 
-
 h1 {
 	font-size: 60px;
 	font-weight: normal	;
@@ -42,21 +41,14 @@ h1 {
 	text-align: center;
 }
 
-.banner p{
-	text-align: center ;
-	font-size: 25px;
-	color: white;
-
-	 }  
-
-  /*menu*/
-  .superappka{
+ /*menu*/
+.superappka{
 	font-weight: bold;
 	margin-right: 0;
 	text-align: center;
-  }
+}
 
-  .menu {
+.menu {
 	text-align: center;
 	background-color: white;
 	display: block;
@@ -64,6 +56,7 @@ h1 {
 
 ul {
 	margin: 0;
+	padding-left: 0;
 }
 
 .menu li {
@@ -80,96 +73,112 @@ ul {
 
 .menu a:hover {
     background-color: #25133d;
-    color: white;}
-	
-	.banner {
-		background-image: url(images/pozadi.jpg);
-		background-size: cover;
-		width: 100%;
-		min-height: 450px;
-		position: relative;
-	}
+    color: white;
+}
 
-	.banner img {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		max-width: 35%;
-		padding-top: 20px;
-	}	
+
+/*banner*/
+
+.banner {
+	background-image: url(images/pozadi.jpg);
+	background-size: cover;
+	width: 100%;
+	min-height: 450px;
+	position: relative;
+}
+
+.banner p{
+	text-align: center ;
+	font-size: 25px;
+	color: white;
+}
+
+.banner img {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	max-width: 35%;
+	padding-top: 20px;
+}	
+
+/*tlačítka*/
 	
-	.tlacitka{
-		text-align: center;
-		margin-bottom: 20px;
-	  }
+.tlacitka{
+	text-align: center;
+	margin-bottom: 20px;
+}
 	  
-		.stahnout {
-			margin-top: 30px;
-			margin-bottom: 10px;
-			background-color:   #48418e;
-			width: 180px;
-			height: 45px;
-			margin-left: auto;
-			margin-right: auto;
-			border: 1px solid white;
-			border-radius: 5px;
-			}
+.stahnout {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	background-color: #48418e;
+	width: 180px;
+	height: 45px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid white;
+	border-radius: 5px;
+}
 	
-		.stahnout a {
-			text-decoration: none;
-			font-size: 14px;
-			color: white;
-			display:inline-block;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			border-width: 10px
-		   }
+.stahnout a {
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+	display:inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-width: 10px
+}
 	
-		   .info {
-			width: 160px;
-			height: 45px;
-			margin-left: auto;
-			margin-right: auto;
-			margin-bottom: 15px;
-			border: 1px solid white;
-			border-radius: 5px;
-			}
+.info {
+	width: 160px;
+	height: 45px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	border: 1px solid white;
+	border-radius: 5px;
+}
 		
-			.info a {
-			text-decoration: none;
-			font-size: 14px;
-			color: white;
-			display:inline-block;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			}
+.info a {
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+	display:inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
-			.obsah{
-				text-align: center;
-				margin-top: 20px;
-				margin-bottom: 20px;
-			  }
+/*obsah*/
 
-			.obsah img{
-				width: 50px;
-				margin-top: 20px;
-			}
+.obsah{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 
-			.obsah h2{
-				color: #48418e;
-				margin: 0;
-			}
+.obsah img{
+	width: 50px;
+	margin-top: 20px;
+}
 
-			footer {
-				background-color:#48418e ;
-				text-align: center;
-				color: white;
-				height: 40px;
-			}
+.obsah h2{
+	color: #48418e;
+	margin: 0;
+}
 
-			footer p {
-				padding-top: 7px;
-			}
+/*patička*/
+
+footer {
+	background-color:#48418e ;
+	text-align: center;
+	color: white;
+	height: 40px;
+}
+
+footer p {
+	padding-top: 7px;
+}
 
 	
 	@media screen and (min-width: 640px){
@@ -197,53 +206,35 @@ ul {
 			display: inline-block;
 			margin: 0;
 		  }
-		
-		  .menu a {
-			display: block;
-			text-decoration: none;
-			color: black;
-			padding: 20px;
-			flex-shrink: 0;
-
+		  ul {
+			padding-left: 40px;
 		  }
 		
-	
-		.banner {
-			background-image: url(images/pozadi.jpg);
-			background-size: cover;
-			width: 100%;
-			min-height: 450px;
-			position: relative;
-		}
+		  .menu a {
+			flex-shrink: 0;
+		  }
 	
 		.banner p{
 			text-align: left ;
-			 }  
+		  }  
 
 			   
 		.tlacitka{
 			display: flex;
 			margin-left: 0;
-			  }  
+		  }  
 
 		.stahnout {
 			margin: 0 20px 0 40px;
-			}
+		  }
 
 		.info {
 			margin-left: 0;
-				}
+		  }
 	}	
 	
 	/*breakpoint 960px*/
 	@media screen and (min-width: 960px){
-		.banner {
-			background-image: url(images/pozadi.jpg);
-			background-size: cover;
-			width: 100%;
-			min-height: 450px;
-			position: relative;
-		}
 	
 		h1 {
 			font-size: 90px;
@@ -265,7 +256,6 @@ ul {
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-		
 		}
 			
 	}
