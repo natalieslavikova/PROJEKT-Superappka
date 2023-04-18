@@ -153,9 +153,9 @@ ul {
 
 .obsah{
 	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	margin: 20px 40px 20px 40px;
 }
+
 
 .obsah img{
 	width: 50px;
